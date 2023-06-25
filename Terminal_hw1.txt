@@ -1,0 +1,66 @@
+1	Посмотреть, где я 					1 pwd
+2	Создать папку 						2 mkdir main
+3	Зайти в папку						3 cd main
+4	Создать 3 папки						4 mkdir d1 d2 d3
+5	Зайти в любую папку					5 cd d1
+6	Создать 5 файлов (3 txt, 2 json)	6 touch fruit.txt vegetable.txt milk.txt animal.json country.json
+7	Создать 3 папки						7 mkdir dir1 dir2 dir3
+8	Вывести список содержимого папки	8 ls -l
+9	Открыть любой файл txt				9 cat < fruit.txt
+10	Написать туда содержимое			10 cat > fruit.txt 
+												1 apple
+												2 orange 
+												3 grape
+												4 mango
+												5 banana
+												6 lemon
+												7 lime
+												8 avocado
+11	Сохранить и выйти					11 ctrl +D;
+10' Написать туда содержимое			10' vim animal.json 
+											{	"name": "giraffe",
+												"color": "yellow",
+												"area":"Africa"
+											},
+											{	"name": "ellefant",
+												"color": "grey",
+												"area": "Africa"
+											},
+											{	"name": "tiger",
+												"color": "black and red",
+												"area": "asia"
+											},
+											{	"name": "polar bear",
+												"color": "white",
+												"area": "arctic"
+											}	
+
+11'	Сохранить и выйти					11' esc :wq
+12	Выйти из папки на уровень выше		12 cd ..
+13	Переместить 2 любых файла			13 mv fruit.txt milk dir1
+14	Скопировать 2 любых файла			14 cp dir1/fruit.txt dir1/milk dir3
+15	Найти файл по имени					15 find main -type f -name veget.txt
+16	Посмотреть содержимое в реальном 	16 grep -r "color" *
+времени	
+17	Вывести несколько первых строк		17 Head -4 d1/fruit.json
+  из текстового файла 	
+18	Вывести несколько последних строк	18 Tail -6 d1/animal.txt
+ из текстового файла	
+19	Посмотреть содержимое длинного 		19 less animal.json
+файла							
+20	Вывести дату и время				20 date
+
+1)* Отправить запрос на сервис
+curl culr http://162.55.220.72:5006/terminal-hw-request
+
+2)* Скрипт (3-8, 13)
+	Script:
+			mkdir main
+			cd main
+			mkdir d1 d2 d3
+			cd d1
+			touch fruit.txt vegetable.txt milk.txt animal.json country.json
+			mkdir dir1 dir2 dir3
+			ls -l
+			mv fruit.txt milk.txt dir1
+	./script.bash
