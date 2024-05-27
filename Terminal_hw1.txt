@@ -50,7 +50,7 @@
 20. Вывести дату и время			20. date
 
 1)* Отправить запрос на сервис
-curl culr http://162.55.220.72:5006/terminal-hw-request
+curl http://162.55.220.72:5006/terminal-hw-request
 
 2)* Скрипт (3-8, 13)
 		Script:
