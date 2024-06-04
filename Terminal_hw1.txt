@@ -28,7 +28,8 @@
 									},
 									{	"name": "tiger",
 										"color": "black and red",
-										"area": "asia"											},
+										"area": "asia"	
+									},
 									{	"name": "polar bear",
 										"color": "white",
 										"area": "arctic"
@@ -53,7 +54,7 @@
 curl http://162.55.220.72:5006/terminal-hw-request
 
 2)* Скрипт (3-8, 13)
-		Script:
+		cat > Script.bash
 				mkdir main
 				cd main
 				mkdir d1 d2 d3
